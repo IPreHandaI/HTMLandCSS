@@ -4,47 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <main>
-        <label>FORMULÁRIO</label> 
-        <form action="abc.php" method="get">
-            <table>
-                <tr>       
-                    <td>
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" placeholder="FulanoDeTal">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="fulanodetal@gmail.com">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="data">Data de Nascimento:</label>
-                        <input type="date" id="data">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="curriculo">Currículo:</label>
-                        <input type="file" id="curriculo">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button type="submit">Enviar</button>
-                    </td>
-                    <td>
-                        <button type="reset">Limpar</button>
-                    </td>
-                </tr>
-            </table>
-        </form>
+        <a id="titleCurr">Currículo</a> 
+        <div class="divCurr">
+            <form action="abc.php" method="get">
+                <table>
+                    <tr>       
+                        <td>
+                            <label id="Nome" for="nome">Nome:</label>
+                            <input type="text" id="nome" placeholder="FulanoDeTal" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="Email" for="email">Email:</label>
+                            <input type="email" id="email" placeholder="fulanodetal@gmail.com" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="dataNascimento" for="data">Data de Nascimento:</label>
+                            <input type="date" id="data">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="Curriculo" for="curriculo">Currículo:</label>
+                            <input type="file" id="curriculo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="enviar" type="submit">Enviar</button>
+                        </td>
+                        <td>
+                            <button id="limpar" type="reset">Limpar</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </main>
 </body>
 </html>
